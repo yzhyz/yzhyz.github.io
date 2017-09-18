@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>我是项目1</h1>
+<table border="1" width="800px" align="center">
+    <tr>
+        <th>ID</th>
+        <th>name</th>
+        <th>age</th>
+        <th>birth</th>
+    </tr>
+    {volist name="data" id="value"}
+        <tr>
+            <td>{$value.user_qq}</td>
+            <td>{$value.user_name}</td>
+            <td>{$value.user_sex}</td>
+            <td>{$value.user_birthday}</td>
+        </tr>
+    {/volist}
+</table>
+</body>
+</html>
